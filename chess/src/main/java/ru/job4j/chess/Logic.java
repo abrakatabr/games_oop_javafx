@@ -26,8 +26,8 @@ public final class Logic {
             for (Cell cell : steps) {
                 if (figures[i] != null && cell.equals(figures[i].position())) {
                     throw new OccupiedCellException(
-                            String.format("Could not move, because cell %s is occupied", figures[i].position())
-                    );
+                            String.format("Could not move, because cell %s is occupied",
+                                    figures[i].position()));
                 }
             }
         }
